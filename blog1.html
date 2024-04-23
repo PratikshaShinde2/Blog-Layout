@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <!----==Title=====================-->
+    <title>Flower Power</title>
+    <!--CSS===========================-->
+    <link rel="stylesheet" href="css/f_style.css" />
+    <!--import poppins font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section id="blog">
+        <div class="blog-heading">
+            <strong>Flower Power!</strong>
+            <h3>How do Flowers & Ayurveda go Hand in Hand?</h3>
+        </div>
+   
+
+        <!--Blog container-->
+        
+             
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="images/f1.jpg" style="width:50%">
+                  <div class="text">Hibiscus</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="images/f2.jpg" style="width:50%">
+                  <div class="text">Roses</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="images/f3.jpg" style="width:50%">
+                  <div class="text">Jasmine</div>
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+          
+            
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+
+            <div class="blog-container">
+            <!--Box 1-->
+            <div class="blog-box2">
+                <!--img-->
+                <div class="blog-text">
+                    <p><b><h4>Colour Therapy</h4></b>
+                        When it comes to flowers and Ayurveda, the two go hand in hand. Flowers can help to balance and support the body in many ways, depending on their colour and aroma. For example, red flowers are believed to stimulate the appetite and help to digest food better. They are also thought to be helpful for treating problems such as fever, indigestion, and chest congestion. On the other hand, yellow flowers are said to be calming and relaxing, helping to soothe the mind and relieve stress.
+                        <br>
+                        <b><h4>Balancing of Doshas</h4></b>
+                        Flowers are indeed a key part of this ancient healing system. In fact, different flowers can be used to balance the three doshas, i.e. Vata, Pitta and Kapha. Vata individuals should stick to light, airy flowers like daisies and lilies. Pitta people should avoid heat-inducing flowers like chrysanthemums and sunflowers. And Kapha people should stick to earthy, grounding flowers like poppies and lavender.
+                        
+                        <b><h4>Improves Health & Wellbeing</h4></b>
+                        Flowers have been used in Ayurveda for centuries, and each type has its own unique healing properties. Jasmine, for example, is known for its calming effects and can be used to treat anxiety, stress, and insomnia. While lavender is a well-known relaxant that can be used to treat headaches, anxiety, and depression.
+                        
+                        <b><h4>Works as a Beauty Regime</h4></b>
+                        There is no shortage of ways to incorporate flowers into your beauty regime. Flowers play a crucial role in Ayurvedic medicines as well as a number of beauty care products. You can use them in face masks, skin toners, medication creams and hair treatments. Moreover, essential oils made from flowers have a calming, unwinding and reviving effect on our nerves.</p>
+                </div>
+            </div>
+        </div>
+
+        <a href="index.html"><button>HomePage</button></a>
+     
+
+       
+        </section>
+        </body>
+    </html>

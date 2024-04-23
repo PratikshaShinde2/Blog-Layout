@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <!----==Title=====================-->
+    <title>Wanderlust</title>
+    <!--CSS===========================-->
+    <link rel="stylesheet" href="css/f_style.css" />
+    <!--import poppins font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section id="blog">
+        <div class="blog-heading">
+            <strong>Wanderlust!!</strong>
+            <h3>Tokyo is one of the most unique cities in the world. So, what is Tokyo famous for?</h3>
+        </div>
+   
+
+        <!--Blog container-->
+        
+             
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="images/t1.jpg" style="width:500%">
+                  <div class="text">Michelin Stars</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="images/t2.jpg" style="width:500%">
+                  <div class="text">Shibuya Crossing</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="images/t3.jpg" style="width:500%">
+                  <div class="text">Harajuku Fashion</div>
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+          
+            
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+
+            <div class="blog-container">
+            <!--Box 1-->
+            <div class="blog-box2">
+                <!--img-->
+                <div class="blog-text">
+                    <p><b><h4>Michelin Stars</h4></b>
+                        It’s no secret that Japanese cuisine is one of the best in the world. Fresh sushi, ramen, yakitori, katsu curry… you name it. But did you know that there is no city with more Michelin Stars than Tokyo? (Yes, more than Paris, New York and London!)Tokyo is home to over 200 Michelin Star restaurants. And Tokyo isn’t the only city in Japan that ranks well here – Osaka takes 3rd place behind Paris and Kyoto follows at number 4
+                        <br>
+                        <b><h4>Shibuya Crossing</h4></b>
+                        Tokyo is also home to the busiest pedestrian crossing in the world: Shibuya Crossing. You probably have come across pictures of it, as it’s one of the most photographed places in Tokyo – a truly iconic spot in the city. At times, more than 3,000 people cross the street at the same time here. Crossing it yourself is a real thrill and should absolutely be on your Japan bucket list when you visit Japan.
+                        
+                        <b><h4>Harajuku Fashion</h4></b>
+                        Harajuku is a district in Tokyo nestled between Shibuya and Shinjuku, and it’s known for its links to the extravagant street fashion style that shares its name.  Harajuku fashion is hard to describe. It’s a mix of lots of different Japanese sub-styles, including cosplay and Lolita. Think colourful and kawaii. A quick Google search will give you a better idea, but it’s the polar opposite of the Japanese businessmen in suit and tie
+                        
+                        <b><h4>Akihabara (Anime, Manga and Tech)</h4></b>
+                        Japan is known for video games, anime and manga, and the Akihabara district in Tokyo is heaven for any fans. Akihabara is also known as “Electric City”, referring to the many electronic shops. You can find tons of department stores selling the latest gadgets, but it’s also a great place to find any merch of your favourite gaming or anime franchise.
+                        Plus, this is one of the best places to get your hands on any retro video games in Japan. If you’re looking for a copy of your favourite childhood game, chances are that there is one for sale in Akihabara.</p>
+                </div>
+            </div>
+        </div>
+
+        <a href="index.html"><button>HomePage</button></a>
+     
+
+       
+        </section>
+        </body>
+    </html>
